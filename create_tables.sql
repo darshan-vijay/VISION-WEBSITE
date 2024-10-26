@@ -51,3 +51,11 @@ CREATE TABLE workshops (
     virtualrobot TINYINT DEFAULT 0,
     FOREIGN KEY (email) REFERENCES userinfo(email)
 );
+
+-- Create table for payments
+CREATE TABLE contact (
+    email VARCHAR(255),
+    name VARCHAR(255) NOT NULL,
+    subject VARCHAR(20) NOT NULL,
+    message VARCHAR(255)
+);
